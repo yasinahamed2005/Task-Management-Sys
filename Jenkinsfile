@@ -39,7 +39,7 @@ pipeline {
         stage('Start Backend') {
             steps {
                 dir('backend') {
-                    bat 'npm start &'
+                    bat 'start "" npm start'
                 }
             }
         }
